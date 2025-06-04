@@ -1,0 +1,79 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+ 
+  
+
+}
+.navbar {
+display: flex;
+gap:30px;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;    
+color: rgb(72, 63, 190);
+}
+button{
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+   
+}
+.nav_buttons {
+    
+    gap:30px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+}
+button {
+    width: 100px;
+    height: 40px;
+    border: #395d91;
+    border-radius: 10px;
+    font-weight: 600;
+}
+button:hover {
+    background-color: #395d91;
+    color: white;
+}
+.Text{
+    display: flex;
+    flex-direction: column;      /* Stack children vertically */
+    justify-content: center;     /* Center vertically */
+    align-items: center;         /* Center horizontally */
+    height: 300px; 
+}
+.p1{
+   font-size: 100px; 
+   display: flex; 
+   flex-direction: column;
+   font-weight: 600;
+}
+.p2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #353940;
+}
+ .sp1{
+    color :rgb(72, 63, 190);
+}
+.start{
+    background-color: rgb(72, 63, 190);
+    color: white;
+    width: 400px;
+    height: auto;
+    font-size: 30px;
+    font-weight: 600;
+}
