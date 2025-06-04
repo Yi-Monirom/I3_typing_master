@@ -4,33 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Scores - Typing Master</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="scores.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/score.css">
+    <link rel="stylesheet" href="../css/tm.css">
 </head>
 <body>
     <div class="page-container">
         <!-- Header -->
-        <header class="header">
-            <nav class="nav">
-                <a href="index.html" class="nav-brand">
-                    <i class="fas fa-keyboard brand-icon"></i>
-                    <span class="brand-title">Typing Master</span>
-                </a>
-                <div class="nav-links">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <a href="scores.html" class="nav-link active">Scores</a>
-                    <a href="profile.html" class="nav-link">Profile</a>
-                    <a href="login.html" class="btn btn-outline">Log in</a>
-                </div>
-            </nav>
-        </header>
+        <div class ="navbar">
+        <h1>Typing Master</h1>
+        <div class="nav_buttons">
+                <button><a href="landingPage.html" >Home</a></button>
+                
+        </div>
+    </div>
 
-        <!-- Main Content -->
         <main class="main-content">
             <div class="scores-section">
-                <!-- Page Header -->
+              
                 <div class="scores-header">
                     <h1 class="scores-title">Leaderboard & Scores</h1>
                     <p class="scores-description">
@@ -40,9 +30,7 @@
 
                 <!-- Filter Tabs -->
                 <div class="filter-tabs">
-                    <button class="tab-btn active" data-tab="global">Global Leaderboard</button>
-                    <button class="tab-btn" data-tab="personal">My Scores</button>
-                    <button class="tab-btn" data-tab="recent">Recent Tests</button>
+                    <button class="tab-btn active" data-tab="global" style="width: 400px;background-color: rgb(72, 63, 190); color:azure">user Leaderboard</button>
                 </div>
 
                 <!-- Global Leaderboard -->
@@ -53,13 +41,7 @@
                                 <i class="fas fa-trophy"></i>
                                 Top Performers
                             </h2>
-                            <div class="sort-options">
-                                <select class="sort-select">
-                                    <option value="wpm">Sort by WPM</option>
-                                    <option value="accuracy">Sort by Accuracy</option>
-                                    <option value="tests">Sort by Tests Taken</option>
-                                </select>
-                            </div>
+                            
                         </div>
                         
                         <div class="leaderboard-table">
@@ -74,82 +56,85 @@
                             
                             <div class="table-body">
                                 <!-- Rank 1 -->
-                                <div class="table-row rank-1">
-                                    <div class="rank-col">
-                                        <div class="rank-badge gold">
-                                            <i class="fas fa-crown"></i>
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="user-col">
-                                        <div class="user-info">
-                                            <div class="user-avatar">AJ</div>
-                                            <div class="user-details">
-                                                <div class="user-name">Alex Johnson</div>
-                                                <div class="user-level">Master Typist</div>
+                                 <div class="top3">
+                                    <div class="table-row rank-1 " >
+                                        <div class="rank-col">
+                                            <div class="rank-badge gold">
+                                                <i class="fas fa-crown"></i>
+                                                1
                                             </div>
                                         </div>
+                                        <div class="user-col">
+                                            <div class="user-info">
+                                                <div class="user-avatar">AJ</div>
+                                                <div class="user-details">
+                                                    <div class="user-name">Alex Johnson</div>
+                                                    <div class="user-level">Master Typist</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpm-col">
+                                            <span class="wpm-value">125</span>
+                                            <span class="wpm-trend up">+3</span>
+                                        </div>
+                                        <div class="accuracy-col">98.5%</div>
+                                        <div class="tests-col">342</div>
+                                        <div class="date-col">2 hours ago</div>
                                     </div>
-                                    <div class="wpm-col">
-                                        <span class="wpm-value">125</span>
-                                        <span class="wpm-trend up">+3</span>
-                                    </div>
-                                    <div class="accuracy-col">98.5%</div>
-                                    <div class="tests-col">342</div>
-                                    <div class="date-col">2 hours ago</div>
-                                </div>
 
-                                <!-- Rank 2 -->
-                                <div class="table-row rank-2">
-                                    <div class="rank-col">
-                                        <div class="rank-badge silver">
-                                            <i class="fas fa-medal"></i>
-                                            2
-                                        </div>
-                                    </div>
-                                    <div class="user-col">
-                                        <div class="user-info">
-                                            <div class="user-avatar">MG</div>
-                                            <div class="user-details">
-                                                <div class="user-name">Maria Garcia</div>
-                                                <div class="user-level">Expert Typist</div>
+                                    <!-- Rank 2 -->
+                                    <div class="table-row rank-2">
+                                        <div class="rank-col">
+                                            <div class="rank-badge silver">
+                                                <i class="fas fa-medal"></i>
+                                                2
                                             </div>
                                         </div>
+                                        <div class="user-col">
+                                            <div class="user-info">
+                                                <div class="user-avatar">MG</div>
+                                                <div class="user-details">
+                                                    <div class="user-name">Maria Garcia</div>
+                                                    <div class="user-level">Expert Typist</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpm-col">
+                                            <span class="wpm-value">118</span>
+                                            <span class="wpm-trend up">+1</span>
+                                        </div>
+                                        <div class="accuracy-col">99.2%</div>
+                                        <div class="tests-col">287</div>
+                                        <div class="date-col">5 hours ago</div>
                                     </div>
-                                    <div class="wpm-col">
-                                        <span class="wpm-value">118</span>
-                                        <span class="wpm-trend up">+1</span>
-                                    </div>
-                                    <div class="accuracy-col">99.2%</div>
-                                    <div class="tests-col">287</div>
-                                    <div class="date-col">5 hours ago</div>
-                                </div>
 
-                                <!-- Rank 3 -->
-                                <div class="table-row rank-3">
-                                    <div class="rank-col">
-                                        <div class="rank-badge bronze">
-                                            <i class="fas fa-award"></i>
-                                            3
-                                        </div>
-                                    </div>
-                                    <div class="user-col">
-                                        <div class="user-info">
-                                            <div class="user-avatar">ST</div>
-                                            <div class="user-details">
-                                                <div class="user-name">Sam Taylor</div>
-                                                <div class="user-level">Expert Typist</div>
+                                    <!-- Rank 3 -->
+                                    <div class="table-row rank-3">
+                                        <div class="rank-col">
+                                            <div class="rank-badge bronze">
+                                                <i class="fas fa-award"></i>
+                                                3
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="wpm-col">
-                                        <span class="wpm-value">115</span>
-                                        <span class="wpm-trend down">-2</span>
-                                    </div>
-                                    <div class="accuracy-col">97.8%</div>
-                                    <div class="tests-col">456</div>
-                                    <div class="date-col">1 day ago</div>
-                                </div>
+                                        <div class="user-col">
+                                            <div class="user-info">
+                                                <div class="user-avatar">ST</div>
+                                                <div class="user-details">
+                                                    <div class="user-name">Sam Taylor</div>
+                                                    <div class="user-level">Expert Typist</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpm-col">
+                                            <span class="wpm-value">115</span>
+                                            <span class="wpm-trend down">-2</span>
+                                        </div>
+                                        <div class="accuracy-col">97.8%</div>
+                                        <div class="tests-col">456</div>
+                                        <div class="date-col">1 day ago</div>
+                                    </div>  
+                                 </div>
+                                
 
                                 <!-- Regular ranks -->
                                 <div class="table-row">
@@ -192,318 +177,22 @@
                                     <div class="date-col">6 hours ago</div>
                                 </div>
 
-                                <div class="table-row">
-                                    <div class="rank-col">6</div>
-                                    <div class="user-col">
-                                        <div class="user-info">
-                                            <div class="user-avatar">EW</div>
-                                            <div class="user-details">
-                                                <div class="user-name">Emma Wilson</div>
-                                                <div class="user-level">Intermediate Typist</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wpm-col">
-                                        <span class="wpm-value">105</span>
-                                        <span class="wpm-trend up">+2</span>
-                                    </div>
-                                    <div class="accuracy-col">97.5%</div>
-                                    <div class="tests-col">167</div>
-                                    <div class="date-col">1 day ago</div>
-                                </div>
-
-                                <div class="table-row">
-                                    <div class="rank-col">7</div>
-                                    <div class="user-col">
-                                        <div class="user-info">
-                                            <div class="user-avatar">JB</div>
-                                            <div class="user-details">
-                                                <div class="user-name">James Brown</div>
-                                                <div class="user-level">Intermediate Typist</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wpm-col">
-                                        <span class="wpm-value">102</span>
-                                        <span class="wpm-trend up">+1</span>
-                                    </div>
-                                    <div class="accuracy-col">95.8%</div>
-                                    <div class="tests-col">145</div>
-                                    <div class="date-col">4 hours ago</div>
-                                </div>
-
-                                <div class="table-row">
-                                    <div class="rank-col">8</div>
-                                    <div class="user-col">
-                                        <div class="user-info">
-                                            <div class="user-avatar">SC</div>
-                                            <div class="user-details">
-                                                <div class="user-name">Sophia Chen</div>
-                                                <div class="user-level">Intermediate Typist</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wpm-col">
-                                        <span class="wpm-value">99</span>
-                                        <span class="wpm-trend down">-1</span>
-                                    </div>
-                                    <div class="accuracy-col">98.0%</div>
-                                    <div class="tests-col">189</div>
-                                    <div class="date-col">2 days ago</div>
-                                </div>
-
-                                <div class="table-row">
-                                    <div class="rank-col">9</div>
-                                    <div class="user-col">
-                                        <div class="user-info">
-                                            <div class="user-avatar">OH</div>
-                                            <div class="user-details">
-                                                <div class="user-name">Omar Hassan</div>
-                                                <div class="user-level">Beginner Typist</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wpm-col">
-                                        <span class="wpm-value">96</span>
-                                        <span class="wpm-trend up">+4</span>
-                                    </div>
-                                    <div class="accuracy-col">96.2%</div>
-                                    <div class="tests-col">123</div>
-                                    <div class="date-col">8 hours ago</div>
-                                </div>
-
-                                <div class="table-row">
-                                    <div class="rank-col">10</div>
-                                    <div class="user-col">
-                                        <div class="user-info">
-                                            <div class="user-avatar">LM</div>
-                                            <div class="user-details">
-                                                <div class="user-name">Liam Murphy</div>
-                                                <div class="user-level">Beginner Typist</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wpm-col">
-                                        <span class="wpm-value">93</span>
-                                        <span class="wpm-trend up">+2</span>
-                                    </div>
-                                    <div class="accuracy-col">97.1%</div>
-                                    <div class="tests-col">98</div>
-                                    <div class="date-col">12 hours ago</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Personal Scores -->
-                <div class="tab-content" id="personal">
-                    <div class="personal-stats">
-                        <div class="stats-grid">
-                            <div class="stat-card">
-                                <div class="stat-icon">
-                                    <i class="fas fa-tachometer-alt"></i>
-                                </div>
-                                <div class="stat-info">
-                                    <div class="stat-value">87</div>
-                                    <div class="stat-label">Best WPM</div>
-                                </div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-icon">
-                                    <i class="fas fa-bullseye"></i>
-                                </div>
-                                <div class="stat-info">
-                                    <div class="stat-value">94.2%</div>
-                                    <div class="stat-label">Best Accuracy</div>
-                                </div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-icon">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
-                                <div class="stat-info">
-                                    <div class="stat-value">73</div>
-                                    <div class="stat-label">Avg WPM</div>
-                                </div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-icon">
-                                    <i class="fas fa-clipboard-list"></i>
-                                </div>
-                                <div class="stat-info">
-                                    <div class="stat-value">45</div>
-                                    <div class="stat-label">Tests Taken</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="personal-scores-table">
-                            <h3>Your Recent Scores</h3>
-                            <div class="scores-list">
-                                <div class="score-item">
-                                    <div class="score-date">Today, 2:30 PM</div>
-                                    <div class="score-details">
-                                        <span class="score-wpm">87 WPM</span>
-                                        <span class="score-accuracy">94.2%</span>
-                                        <span class="score-difficulty">Medium</span>
-                                    </div>
-                                    <div class="score-badge best">Personal Best!</div>
-                                </div>
-                                <div class="score-item">
-                                    <div class="score-date">Yesterday, 7:45 PM</div>
-                                    <div class="score-details">
-                                        <span class="score-wpm">82 WPM</span>
-                                        <span class="score-accuracy">91.8%</span>
-                                        <span class="score-difficulty">Medium</span>
-                                    </div>
-                                </div>
-                                <div class="score-item">
-                                    <div class="score-date">Yesterday, 3:15 PM</div>
-                                    <div class="score-details">
-                                        <span class="score-wpm">79 WPM</span>
-                                        <span class="score-accuracy">93.5%</span>
-                                        <span class="score-difficulty">Easy</span>
-                                    </div>
-                                </div>
-                                <div class="score-item">
-                                    <div class="score-date">2 days ago, 6:20 PM</div>
-                                    <div class="score-details">
-                                        <span class="score-wpm">75 WPM</span>
-                                        <span class="score-accuracy">89.2%</span>
-                                        <span class="score-difficulty">Hard</span>
-                                    </div>
-                                </div>
-                                <div class="score-item">
-                                    <div class="score-date">3 days ago, 4:10 PM</div>
-                                    <div class="score-details">
-                                        <span class="score-wpm">71 WPM</span>
-                                        <span class="score-accuracy">92.1%</span>
-                                        <span class="score-difficulty">Medium</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Recent Tests -->
-                <div class="tab-content" id="recent">
-                    <div class="recent-tests">
-                        <h2>Recent Community Tests</h2>
-                        <div class="tests-grid">
-                            <div class="test-card">
-                                <div class="test-header">
-                                    <div class="test-user">
-                                        <div class="user-avatar small">AJ</div>
-                                        <span>Alex Johnson</span>
-                                    </div>
-                                    <div class="test-time">5 minutes ago</div>
-                                </div>
-                                <div class="test-results">
-                                    <div class="test-wpm">125 WPM</div>
-                                    <div class="test-accuracy">98.5%</div>
-                                </div>
-                                <div class="test-difficulty">Hard Difficulty</div>
-                            </div>
-
-                            <div class="test-card">
-                                <div class="test-header">
-                                    <div class="test-user">
-                                        <div class="user-avatar small">MG</div>
-                                        <span>Maria Garcia</span>
-                                    </div>
-                                    <div class="test-time">12 minutes ago</div>
-                                </div>
-                                <div class="test-results">
-                                    <div class="test-wpm">118 WPM</div>
-                                    <div class="test-accuracy">99.2%</div>
-                                </div>
-                                <div class="test-difficulty">Medium Difficulty</div>
-                            </div>
-
-                            <div class="test-card">
-                                <div class="test-header">
-                                    <div class="test-user">
-                                        <div class="user-avatar small">PP</div>
-                                        <span>Priya Patel</span>
-                                    </div>
-                                    <div class="test-time">18 minutes ago</div>
-                                </div>
-                                <div class="test-results">
-                                    <div class="test-wpm">112 WPM</div>
-                                    <div class="test-accuracy">98.1%</div>
-                                </div>
-                                <div class="test-difficulty">Easy Difficulty</div>
-                            </div>
-
-                            <div class="test-card">
-                                <div class="test-header">
-                                    <div class="test-user">
-                                        <div class="user-avatar small">DK</div>
-                                        <span>David Kim</span>
-                                    </div>
-                                    <div class="test-time">25 minutes ago</div>
-                                </div>
-                                <div class="test-results">
-                                    <div class="test-wpm">108 WPM</div>
-                                    <div class="test-accuracy">96.9%</div>
-                                </div>
-                                <div class="test-difficulty">Hard Difficulty</div>
-                            </div>
-
-                            <div class="test-card">
-                                <div class="test-header">
-                                    <div class="test-user">
-                                        <div class="user-avatar small">EW</div>
-                                        <span>Emma Wilson</span>
-                                    </div>
-                                    <div class="test-time">32 minutes ago</div>
-                                </div>
-                                <div class="test-results">
-                                    <div class="test-wpm">105 WPM</div>
-                                    <div class="test-accuracy">97.5%</div>
-                                </div>
-                                <div class="test-difficulty">Medium Difficulty</div>
-                            </div>
-
-                            <div class="test-card">
-                                <div class="test-header">
-                                    <div class="test-user">
-                                        <div class="user-avatar small">JB</div>
-                                        <span>James Brown</span>
-                                    </div>
-                                    <div class="test-time">45 minutes ago</div>
-                                </div>
-                                <div class="test-results">
-                                    <div class="test-wpm">102 WPM</div>
-                                    <div class="test-accuracy">95.8%</div>
-                                </div>
-                                <div class="test-difficulty">Easy Difficulty</div>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Call to Action -->
-                <div class="cta-section">
+                <div class="cta-section" >
                     <div class="cta-content">
                         <h2>Ready to Improve Your Ranking?</h2>
                         <p>Take a typing test now and see how you compare!</p>
-                        <a href="test.html" class="btn btn-primary btn-large">Start Typing Test</a>
+                        <a href="test.html" class="start1" style="border-radius: 10px; ">Start Typing Test</a>
                     </div>
                 </div>
             </div>
         </main>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-content">
-                <p>&copy; 2024 Typing Master. All rights reserved.</p>
-            </div>
-        </footer>
-    </div>
-
-    <script src="scores.js"></script>
 </body>
 </html>

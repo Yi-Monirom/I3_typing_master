@@ -1,0 +1,78 @@
+/* Minimal styles for list_user_score.html */
+
+.scores-section {
+  padding: 2rem 0 4rem;
+}
+
+.scores-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.scores-description {
+  font-size: 1.125rem;
+  color: #6b7280;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.leaderboard-table {
+  width: 100%;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 80px 1fr 100px 100px 80px 120px;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: #f8fafc;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 100px 100px 80px 120px;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f3f4f6;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.table-row:hover {
+  background: #4192e2;
+}
+.scores-header,.filter-tabs,.card-header,.cta-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.table-header{
+    background-color: rgb(72, 63, 190); 
+    color: white;
+}
+.top3{
+    background-color: rgb(246, 171, 109) ;
+   
+}
+.cta-section{
+  
+    padding: 40px;
+    text-align: center;
+}
+.start1{
+    background: rgb(72, 63, 190);
+    color: white;
+    width: 400px;
+    height: auto;
+    font-size: 50px;
+    padding: 0px 40px 20px 40px;
+
+}

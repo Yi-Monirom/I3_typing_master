@@ -43,6 +43,7 @@ button {
     border: #395d91;
     border-radius: 10px;
     font-weight: 600;
+    
 }
 button:hover {
     background-color: #395d91;
@@ -76,4 +77,8 @@ button:hover {
     height: auto;
     font-size: 30px;
     font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
