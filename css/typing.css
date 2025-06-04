@@ -1,0 +1,65 @@
+body {
+    background: #23272f;
+    color: #bdbdbd;
+}
+.typing-container {
+    max-width: 700px;
+    margin: 120px auto 0 auto;
+    background: #23272f;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px #0008;
+    padding: 40px 32px 32px 32px;
+    text-align: left;
+}
+.words {
+    font-family: 'Fira Mono', 'Consolas', monospace;
+    font-size: 2.2em;
+    color: #888;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    word-break: break-word;
+}
+.word {
+    padding: 0 2px;
+}
+.word.current {
+    color: #fff;
+    background: #23272f;
+    border-bottom: 2px solid #ffe259;
+}
+.word.correct {
+    color: #a6e22e;
+}
+.word.incorrect {
+    color: #ff5555;
+}
+.input-area {
+    width: 100%;
+    font-size: 1.5em;
+    font-family: 'Fira Mono', 'Consolas', monospace;
+    border: none;
+    border-bottom: 2px solid #ffe259;
+    background: transparent;
+    color: #ffe259;
+    outline: none;
+    margin-bottom: 24px;
+}
+.stats {
+    margin-top: 24px;
+    font-size: 1.1em;
+    color: #ffe259;
+}
+.restart-btn {
+    margin-top: 24px;
+    padding: 10px 28px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
+    color: #23272f;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+.restart-btn:hover {
+    background: linear-gradient(90deg, #ffa751 0%, #ffe259 100%);
+}
