@@ -1,5 +1,5 @@
 {
-    "livePreview.defaultPreviewPath": "/html/landingPage.html",
+    "livePreview.defaultPreviewPath": "/html/list_user_score.html",
     "fiveServer.highlight": true,
     "fiveServer.host": ""
 }
